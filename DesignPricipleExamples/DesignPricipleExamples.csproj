@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DependencyInversion\DependencyInversion.csproj" />
     <ProjectReference Include="..\Liskov\LiskovSubstitution.csproj" />
     <ProjectReference Include="..\OpenClosed\OpenClosed.csproj" />
     <ProjectReference Include="..\SingleResourceResponsibilty\SingleResourceResponsibilty.csproj" />

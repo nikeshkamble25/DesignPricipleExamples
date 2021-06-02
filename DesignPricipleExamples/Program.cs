@@ -1,5 +1,6 @@
 ﻿//using SingleResourceResponsibilty;
 //using OpenClosed_Correct;
+using DependencyInversion_Correct;
 using LiskovSubstitution_Correct;
 using System;
 
@@ -56,7 +57,15 @@ namespace DesignPricipleExamples
             ///If we use only one interface ICreature for all types of creature then this would add complexity plus some of the function could be not useful some of the types of creature
             ///For Example Deer can walk, run, eat, sleep
             ///Plants cant have all similler properties hence we have to sagregate all type with its associated propeties
-            
+
+
+            //5*
+            ////Inversion of Control
+            ILog log = new FileLog();
+            Logger obj = new Logger();
+            obj.Log(log, "Hi there");
+
+            Console.ReadLine();
         }
     }
 }
